@@ -100,6 +100,8 @@ export type WebPageItem = {
    * nullの場合はtabTitleがこのウェブページアイテムのタイトルとして扱われる。
    */
   title: string | null
+  /** Chromeの自動discard機能の有効/無効フラグ */
+  autoDiscardable: boolean
   /** 未読フラグ */
   isUnread: boolean
 }

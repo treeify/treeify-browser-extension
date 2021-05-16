@@ -239,6 +239,7 @@ export class Internal {
           faviconUrl: 'https://ao-system.net/favicon.ico',
           tabTitle: 'ファビコン作成 favicon.ico 無料で半透過マルチアイコンが作れます',
           title: null,
+          autoDiscardable: true,
           isUnread: true,
         },
       },

@@ -71,7 +71,8 @@ export function loadItem() {
   // discarded状態のタブをバックグラウンドで非discarded化できれば望ましいのだがそのようなAPIが見当たらない。
   if (tabId !== undefined) return
 
-  const url = Internal.instance.state.webPageItems[targetItemId].url
+  const webPageItem = Internal.instance.state.webPageItems[targetItemId]
+  const url = webPageItem.url
   const itemIds = External.instance.urlToItemIdsForTabCreation.get(url) ?? List.of()
   External.instance.urlToItemIdsForTabCreation.set(url, itemIds.push(targetItemId))
   chrome.tabs.create({url, active: false})

@@ -28,6 +28,7 @@ export function createWebPageItem(): ItemId {
     faviconUrl: '',
     tabTitle: '',
     title: null,
+    autoDiscardable: true,
     isUnread: false,
   }
   Internal.instance.state.webPageItems[newItemId] = webPageItem
